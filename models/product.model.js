@@ -18,15 +18,15 @@ const Productschema = mongoose.Schema(
         },
         image:{
             type:String,
-            required:true
+            required:false
         },
     },
         {
-            timestamp:true,
+            timestamps:true,
         }
 
 );
 
 const Product = mongoose.model('Product',Productschema);
 
-module.exports= Product;
+export default Product;
